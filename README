@@ -1,0 +1,224 @@
+Group Members
+    Edik Chekhanovksy
+    Hannah Reese
+
+Database Names
+    echekhan.lab7_rooms
+    echekhan.lab7_reservations
+
+Instructions to Compile and Run
+    javac InnReservations.java
+    java -cp mysql-connector-java-8.0.16.jar:. InnReservations
+
+Environment Variable Definitions
+    "IR_JDBC_URL": "jdbc:mysql://db.labthreesixfive.com/echekhan?autoReconnect=true&useSSL=false",
+    "IR_JDBC_USER": "echekhan",
+    "IR_JDBC_PW": "CSC365-W22_015735053"
+
+Work was divided by functional requirement:
+    Hannah Reese: FR1, FR3, FR5
+    Edik Chekhanovksy: FR2, FR4, FR6
+    The main loop and start function were a team effort.
+
+
+
+Git Log
+
+commit 43fdd367e59541a5380df06fc15b53d1f78fba47
+Author: Edik Chekhanovsky <edichek12@hotmail.com>
+Date:   Fri Mar 18 15:05:18 2022 -0700
+
+    Out of bounds fix
+
+ Lab7/InnReservations.java | 16 ++++++++++------
+ 1 file changed, 10 insertions(+), 6 deletions(-)
+
+commit 13451109438c83be65d1279a6fc7064ebc906299
+Author: Edik Chekhanovsky <edichek12@hotmail.com>
+Date:   Fri Mar 18 14:48:51 2022 -0700
+
+    FR2
+
+ Lab7/InnReservations.java | 320 ++++++++++++++++++++++++++++++++++++----------
+ 1 file changed, 255 insertions(+), 65 deletions(-)
+
+commit 6a1ac3801d8a3006a26e3dd82721bdce93cc7798
+Author: hmreese <hmreese308@gmail.com>
+Date:   Fri Mar 18 14:47:18 2022 -0700
+
+    fix preps
+
+ Lab7/InnReservations.java | 38 +++++++++++++++++++-------------------
+ Lab7/worklog.txt          |  2 +-
+ 2 files changed, 20 insertions(+), 20 deletions(-)
+
+commit 45d9be6a89e59d30cb36ce29fd7e665d5016f329
+Author: hmreese <hmreese308@gmail.com>
+Date:   Fri Mar 18 14:32:16 2022 -0700
+
+    worklog
+
+ Lab7/worklog.txt | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit d3ceff77db0230a5dea05a0290b9b092d1d3709a
+Author: hmreese <hmreese308@gmail.com>
+Date:   Fri Mar 18 14:27:54 2022 -0700
+
+    README
+
+ Lab7/README | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+commit 67fcc8e5022454ad7ac743279f1fb756c29bc2ae
+Author: hmreese <hmreese308@gmail.com>
+Date:   Fri Mar 18 14:13:56 2022 -0700
+
+    string fixex
+
+ Lab7/InnReservations.java | 30 +++++++++++++++---------------
+ 1 file changed, 15 insertions(+), 15 deletions(-)
+
+commit a9e3ec6e83d7e8e9aa7d97907cb3c48d053b7410
+Author: hmreese <hmreese308@gmail.com>
+Date:   Thu Mar 17 16:52:40 2022 -0700
+
+    remove old comments
+
+ Lab7/InnReservations.java | 22 +++++++++++-----------
+ 1 file changed, 11 insertions(+), 11 deletions(-)
+
+commit 11d8071697c0729a2eb8ad60beb4fbc763a64284
+Author: hmreese <hmreese308@gmail.com>
+Date:   Thu Mar 17 16:51:20 2022 -0700
+
+    uncomment start
+
+ Lab7/InnReservations.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1c4ea3219e72c7ed16443ab3464110c50535f61b
+Merge: a78037b c5d642b
+Author: hmreese <hmreese308@gmail.com>
+Date:   Thu Mar 17 16:50:55 2022 -0700
+
+    Merge branch 'master' of https://github.com/EdikusRex/CPE365
+
+commit a78037b8c8b1f4121effc85b230cdc56ddc45d9b
+Author: hmreese <hmreese308@gmail.com>
+Date:   Thu Mar 17 16:49:25 2022 -0700
+
+    fix string manip
+
+ Lab7/InnReservations.java | 108 +++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 82 insertions(+), 26 deletions(-)
+
+commit c5d642b3f4351bd6914b4de349395f4ec07a169f
+Author: Edik Chekhanovsky <edichek12@hotmail.com>
+Date:   Wed Mar 16 23:21:01 2022 -0700
+
+    FR 6
+
+ Lab7/InnReservations.java | 209 +++++++++++++++++++++++++++-------------------
+ 1 file changed, 124 insertions(+), 85 deletions(-)
+
+commit 420a9e55e5b555898b52033580b88fc9e51a4e57
+Author: hmreese <hmreese308@gmail.com>
+Date:   Wed Mar 16 19:14:02 2022 -0700
+
+    FR 5
+
+ Lab7/InnReservations.java | 93 +++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 89 insertions(+), 4 deletions(-)
+
+commit 06ac33a74f358d6aad4beb91afddd2f0a8037819
+Author: hmreese <hmreese308@gmail.com>
+Date:   Wed Mar 16 18:22:36 2022 -0700
+
+    FR3
+
+ Lab7/InnReservations.java | 106 +++++++++++++++++++++++-----------------------
+ 1 file changed, 52 insertions(+), 54 deletions(-)
+
+commit 3cb14633282ae39a6407b9351022e93e8955bc49
+Author: hmreese <hmreese308@gmail.com>
+Date:   Wed Mar 16 15:38:40 2022 -0700
+
+    FR1 actually working now, revisit WHENTHENs
+
+ Lab7/InnReservations.java | 97 +++++++++++++++++++++++++----------------------
+ 1 file changed, 52 insertions(+), 45 deletions(-)
+
+commit 3f62970ff3a0a750b925727867fc6c475c93e1c0
+Author: hmreese <hmreese308@gmail.com>
+Date:   Tue Mar 15 16:08:18 2022 -0700
+
+    FR3 in progress
+
+ Lab7/InnReservations.java | 143 ++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 138 insertions(+), 5 deletions(-)
+
+commit 76f572c2a977b874e0ec1f8335799b650fe6bd56
+Merge: fe01fbf 180928d
+Author: hmreese <hmreese308@gmail.com>
+Date:   Mon Mar 14 19:04:11 2022 -0700
+
+    Merge branch 'master' of https://github.com/EdikusRex/CPE365
+
+commit fe01fbfe204122d45779c18e97c2f4abaad587bf
+Author: hmreese <hmreese308@gmail.com>
+Date:   Mon Mar 14 19:02:56 2022 -0700
+
+    FR1
+
+ Lab7/InnReservations.java | 83 +++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 63 insertions(+), 20 deletions(-)
+
+commit 180928d56f91133c38efee740f590eae607b5563
+Author: Edik Chekhanovsky <edichek12@hotmail.com>
+Date:   Mon Mar 14 14:49:19 2022 -0700
+
+    Finished FR4, added int check to option selection, added env vars to README
+
+ Lab7/InnReservations.java | 88 +++++++++++++++++++++++++++++++++++++----------
+ Lab7/README               |  4 ++-
+ 2 files changed, 72 insertions(+), 20 deletions(-)
+
+commit fc6630d54bdbd291239b3e389b8eafe4e3f2678d
+Author: Edik Chekhanovsky <edichek12@hotmail.com>
+Date:   Mon Mar 14 11:26:53 2022 -0700
+
+    Create a single connection at the beginning, adjusted InnReservations.start()
+
+ Lab7/InnReservations.java | 249 +++++++++++++++++++++-------------------------
+ 1 file changed, 113 insertions(+), 136 deletions(-)
+
+commit b15962b34bc177dce919da468cdd26b9dfe05456
+Author: hmreese <hmreese308@gmail.com>
+Date:   Sun Mar 13 15:34:39 2022 -0700
+
+    remove unnecessary, add java
+
+ Lab7/InnReservations.java            |   7 -------
+ Lab7/mysql-connector-java-8.0.16.jar | Bin 0 -> 2293144 bytes
+ 2 files changed, 7 deletions(-)
+
+commit 3f3de144948ecc5843208ad838d19d5087f674f0
+Author: hmreese <hmreese308@gmail.com>
+Date:   Sun Mar 13 15:31:47 2022 -0700
+
+    intial work
+
+ Lab7/InnReservations.java | 155 ++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 155 insertions(+)
+
+commit 9ac3557962151ccc659a7e03f724055fa03b07c5
+Author: Edik Chekhanovsky <edichek12@hotmail.com>
+Date:   Sun Mar 13 14:33:10 2022 -0700
+
+    Added example code, empty files
+
+ Lab7/HastyPastry.java     | 259 ++++++++++++++++++++++++++++++++++++++++++++++
+ Lab7/InnReservations.java |   0
+ Lab7/README               |   6 ++
+ 3 files changed, 265 insertions(+)
